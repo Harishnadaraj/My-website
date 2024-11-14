@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Order Now</title>
+                            <link rel="stylesheet" href="styles.css">
+                        </head>
+                        <body>
+                            <style>
+                              /* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Soft light background */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #6f4c3e, #3b2a20); /* Gradient for header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0e68c; /* Light yellow on hover */
+}
+
+main {
+    padding: 40px;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #6f4c3e; /* Coffee brown */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #6f4c3e; /* Coffee brown */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #8c6a5e; /* Lighter brown for hover effect */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #menu {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+                            </style>
+                            <h1>Order Now</h1>
+                            <form id="order-form">
+                                <h2>Beverages</h2>
+                                <h4>Espresso-Based Drinks</h4>
+                                <ul>
+                                    <li><input type="checkbox" name="beverage" value="espresso"> Espresso</li>
+                                    <li><input type="checkbox" name="beverage" value="americano"> Americano</li>
+                                    <li><input type="checkbox" name="beverage" value="Cappuccino ">Cappuccino</li>
+                                    <li><input type="checkbox" name="beverage" value="Latte ">Latte</li>
+                                    <li><input type="checkbox" name="beverage" value="Macchiato ">Macchiato</li>
+                                    <li><input type="checkbox" name="beverage" value="Flat White">Flat White</li>
+                                    <li><input type="checkbox" name="beverage" value="Cortado">Cortado</li>
+                                    <li><input type="checkbox" name="beverage" value="Ristretto">Ristretto</li>
+                                    <li><input type="checkbox" name="beverage" value="Doppio">Doppio</li>
+                                    <li><input type="checkbox" name="beverage" value="Espresso Tonic">Espresso Tonic</li>
+                                    <li><input type="checkbox" name="beverage" value="Espresso Con Panna">Espresso Con Panna</li>
+
+                                <h3>Coffee-Based Drinks</h3>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Cold Brew">Cold Brew</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Iced Coffee">Iced Coffee</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Affogato">Affogato</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Notro-Cold-Brew">Notro-Cold-Brew</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Mocha">Mocha</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Caramel Macchiato">Caramel Macchiato</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Pumpkin Spice Latte">Pumpkin Spice Latte</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Salted Caramel Mocha">Salted Caramel Mocha</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="Pepper-mint Mocha">Pepper-mint Mocha</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="">Caffe Affogato</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="">Espresso Shots</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="">Espresso Shots with a Splash of Milk</li>
+                                    <li><input type="checkbox" name="Coffee-Based Drinks" value="">Espresso Shots with a Splash of Water</li>
+                                    </ul>
+                                <h2>Food</h2>
+                                <ul>
+                                    <li><input type="checkbox" name="BreakFast" value="Breakfast Sandwiches">BreakFast Sandwiches</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Ham and Cheese Croissants">Ham and Cheese Croissants</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Sausage, Egg, and Cheese Biscuits">Sausage, Egg, and Cheese Biscuits</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Bacon, Egg, and Cheese Bagels">Bacon, Egg, and Cheese Bagels</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Avocado Toast with Poached Eggs">Avocado Toast with Poached Eggs</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Eggs Benedict with Hollandaise Sauce">Eggs Benedict with Hollandaise Sauce</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Huevos Rancheros">Huevos Rancheros</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Breakfast Quesadillas">Breakfast Quesadillas</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Fruit Salad">Fruit Salad</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Greek Yogurt with Honey and Granola">Greek Yogurt with Honey and Granola</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Chia Seed Pudding">Chia Seed Pudding</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Buttermilk Pancakes with Maple Syrup">Buttermilk Pancakes with Maple Syrup</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="French Toast with Berries and Whipped Cream">French Toast with Berries and Whipped Cream</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Waffles with Chocolate Chips and Strawberries">Waffles with Chocolate Chips and Strawberries</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Breakfast Burrito with Scrambled Eggs, Sausage, and Cheese">Breakfast Burrito with Scrambled Eggs, Sausage, and Cheese</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Omelette with Spinach, Tomatoes, and Feta Cheese">Omelette with Spinach, Tomatoes, and Feta Cheese</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Eggs Florentine">Eggs Florentine</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Shakshuka">Shakshuka</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Breakfast Tacos">Breakfast Tacos</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Breakfast Burrito">Breakfast Burrito</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Omelettes">Omelettes</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Scrambled Eggs">Scrambled Eggs</li>
+                                    <li><li><input type="checkbox" name="BreakFast" value="Hard-boiled Eggs">Hard-boiled Eggs</li>
+                                    </ul>
+
+                                    <h2>Tea</h2>
+                                        <ul>
+                                            <li><input type="checkbox" name="Tea" value="Black Tea">Black Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Green Tea">Green Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Oolong Tea">Oolong Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Herbal Tea (Chamomile, Peppermint, Lavender, etc.)">Herbal Tea (Chamomile, Peppermint, Lavender, etc.)</li>
+                                            <li><input type="checkbox" name="Tea" value="Iced Tea">Iced Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Chai Latte">Chai Latte</li>
+                                            <li><input type="checkbox" name="Tea" value="Matcha Latte">Matcha Latte</li>
+                                            <li><input type="checkbox" name="Tea" value="Honey Lemon Tea">Honey Lemon Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Ginger Tea">Ginger Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Jasmine Tea">Jasmine Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Darjeeling Tea">Darjeeling Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="Assam Tea">Assam Tea</li>
+                                            <li><input type="checkbox" name="Tea" value="">Mixed Masala Tea</li>
+                                            
+                                        </ul>
+
+                                    <h3>Special Drinks</h3>
+                                    <ul>
+                                        <li><input type="checkbox" name="Special Drinks" value=""></li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Frappuccino</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Smoothie</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Milkshake</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Hot Chocolate</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Coffee Float</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Cold Brew Float</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Pumpkin Spice Latte</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Salted Caramel Mocha</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Peppermint Mocha</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">London Fog</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Earl Grey Latte</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Matcha Latte</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Honey Almond Latte</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Golden Milk Latte</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Turmeric Latte</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Vietnamese Iced Coffee</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Espresso Shots with a Splash of Milk</li>
+                                        <li><input type="checkbox" name="Special Drinks" value="">Espresso Shots with a Splash of Water</li> 
+                                    </ul>
+
+                                     
+                                    <h4>Coffee-Based Cocktails</h4>
+                                    <ul>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Martini</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Irish Coffee</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">White Russian</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Dirty Chai</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Tonic</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Affogato Martini</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Negroni</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Old Fashioned</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Margarita</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Mojito</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Gimlet</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Sour</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Daiquiri</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Manhattan</li>
+                                        <li><input type="checkbox" name="Coffee-Based Cocktails" value="">Espresso Sidecar</li>
+                                    </ul>
+
+                               
+                                        <a href="placeorder.html" style="text-decoration: none;">
+                                            <button type="button">Place Order</button>
+                                          </a>

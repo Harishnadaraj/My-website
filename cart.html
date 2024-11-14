@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form</title>
+   
+</head>
+<body>
+    <style>
+        #success-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            border-radius: 5px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+    <form id="orderForm" action="process_order.php" method="POST">
+        <input type="text" name="customer_name" placeholder="Customer Name">
+        <input type="email" name="customer_email" placeholder="Customer Email">
+        <button type="submit">Place Order</button>
+    </form>
+
+    <div id="success-message" class="hidden">
+        Order Placed Successfully!
+    </div>
+
+    <script src="php order.js"></script>
+</body>
+</html>
+
